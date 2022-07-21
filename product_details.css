@@ -3,13 +3,12 @@
    margin: auto;
    border: 1px solid red;
    margin-top: 30px;
-  
-
 }
 .one img{
     width: 100%;
 }
-
+  margin: auto;
+}
 .two{
     display: flex;
     width: 80%;
@@ -17,6 +16,7 @@
     font-size: 26px;
     font-weight: bold;
     margin-top: 20px;
+
     border: 1px solid greenyellow;
 
 }
@@ -68,6 +68,41 @@
     grid-template-columns: repeat(100,5fr);
     /* text-align: center; */
     border: 1px solid purple
+
+
+}
+#RAGHAV{
+    margin-left: 140px;
+    margin-top: -80px;
+    font-weight: bold;
+}
+#RAGHAV+p{
+    margin-left: 140px;
+    margin-top: -20px;
+    font-weight: lighter;
+}
+#PAIRS{
+    margin-left: 140px;
+    
+    font-weight: lighter; 
+    margin-top: 100px;
+}
+.three{
+    display: flex;
+    padding: 0%;
+    column-gap: 100px;
+    align-items: center;
+    margin-left: 70px;
+    width: 100%;
+    height:auto;
+    background-color: RGB(247, 247, 247);
+}
+.four{
+    display: grid;
+    margin-left: 50px;
+    column-gap: 35px;
+    grid-template-columns: repeat(100,5fr);
+    text-align: center;
 }
 .dscf{
     background-color: blue;
