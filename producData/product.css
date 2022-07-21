@@ -41,8 +41,11 @@
 
     
   }
-  #sidebar #a:hover {
-  
+  #sidebar .a:hover {
+  font-size: 23px;
+  transform: scale(1.02);
+  z-index: 2;
+  overflow: hidden;
   }
   #sidebar .a {
     margin: 15px 0;
@@ -50,11 +53,14 @@
     text-decoration: none;
     font-size: 18px;
   width: 80%;
-  height: 5%;
+  height: 1.5%;
   border: none;
     color: black;
     border:0px;
 outline:0px;
+transition: 0.5s;
+  
+      overflow: hidden;
   }
   hr{
     width: 80%;
