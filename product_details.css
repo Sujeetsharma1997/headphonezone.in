@@ -1,5 +1,13 @@
 .one{
+    width: 80%;
    margin: auto;
+   border: 1px solid red;
+   margin-top: 30px;
+}
+.one img{
+    width: 100%;
+}
+  margin: auto;
 }
 .two{
     display: flex;
@@ -8,6 +16,59 @@
     font-size: 26px;
     font-weight: bold;
     margin-top: 20px;
+
+    border: 1px solid greenyellow;
+
+}
+.RAGHAV{
+    border: 1px solid black;
+    width: 80%;
+    margin: auto;
+    margin-top: -90px;
+    font-weight: bold;
+}
+#RAGHAV+p{
+    /* margin-left: 140px;
+    margin-top: -20px; */
+    font-weight: lighter;
+}
+.PAIRS{
+    border: 2px solid skyblue;
+    width: 80%;
+    margin: auto;
+    font-weight: lighter; 
+    margin-top: 70px;
+}
+.three{
+    width: 80%;
+    display: flex;
+    margin: auto;
+    
+}
+.threediv{
+    border: 3PX solid black;
+    width: 50%;
+    display: flex;
+    background-color: #f7f7f7;
+}
+.threediv img{
+    width: 60%;
+    margin: auto;
+    padding: 0%;
+    margin-inline: 10px;
+    margin-top: 15px;
+}
+.four{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    /* margin-left: 50px; */
+    column-gap: 35px;
+    margin-top: 30px;
+    grid-template-columns: repeat(100,5fr);
+    /* text-align: center; */
+    border: 1px solid purple
+
 
 }
 #RAGHAV{
@@ -55,3 +116,99 @@
 line-height: 200%;
   /* margin-top: 25px; */
 }
+.five{
+   width: 80%;
+   margin: auto;
+   padding: 0%;
+   display: flex;
+    /* border: 1px solid red; */
+    /* text-align: center; */
+    margin-top: 30px;
+    border: 1px solid black;
+}
+.five>h1{
+    margin-left: 40px;
+    font-weight: lighter;
+    
+}
+.five p{
+   margin-left: 30px;
+   font-weight: lighter;
+   font-size: 20px;
+  
+}
+.six{
+    border: 2px solid pink;
+    width: 80%;
+    margin: auto;
+    padding: 0%;
+    margin-top: 80px;
+}
+.six img{
+    border: 1px solid red;
+    width: 100%;
+    align-items: center;
+    /* margin-left: 180px; */
+   
+    border: 1px solid orangered;
+   
+}
+.seven{
+    
+    display: flex;
+     /* border: 1px solid red; */
+     text-align: center;
+     margin-top: 50px;
+}
+.seven h1{
+    margin-left: 30px;
+    font-weight: lighter;
+    
+   
+ }
+.seven p{
+    margin-left: 30px;
+    font-weight: lighter;
+    font-size: 20px;
+    width: 90%;
+   
+ }
+ .eight{
+    width: 80%;
+    margin: auto;
+    padding: 0%;
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+   
+ }
+ .nine{
+    border: 3px solid skyblue;
+    width: 80%;
+    padding: 0%;
+    margin: auto;
+    margin-top: 70px;
+    display: grid;
+    display: flex;
+    justify-content: space-around;
+ }
+ .nine img{
+    width: 95%;
+    justify-content: space-around;
+    margin-top: 20px;
+ }
+ .ten{
+    border: 2px solid black;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+ }
+ .eleven{
+    border: 2px solid red;
+    width: 80%;
+    margin: auto;
+    margin-top: 70px;
+ }
+ .eleven img{
+    width: 100%;
+ }
