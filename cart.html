@@ -4,106 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      * {
-        margin: 0%;
-        padding: 0%;
-        font-family: Roboto, sans-serif;
-        font: Roboto, 100% (remote);
-      }
-      #cart > div > img {
-        width: 100px;
-        height: 100px;
-
-        margin-right: 30%;
-        margin-left: 1%;
-      }
-      #cart > div {
-        display: flex;
-
-        margin-top: 19px;
-      }
-      #cart > div > div > h3 > span {
-        margin-left: 500px;
-        color: rgb(177, 116, 68);
-      }
-      #cart > div > div > div {
-        border-radius: 10px;
-        border: 1px solid grey;
-        width: 150px;
-        display: flex;
-        padding: 0px 10px;
-        margin-top: 10px;
-        justify-content: center;
-      }
-      #cart > div > div > div > span {
-        margin-left: 19px;
-        font-size: 30px;
-        cursor: pointer;
-        padding: 10px;
-      }
-      #header {
-        width: 100%;
-        height: 100px;
-        border: 1px solid grey;
-      }
-      #header > img {
-        width: 50px;
-        height: 50px;
-        margin: 19px 0px 0px 30px;
-        padding-top: 10px;
-      }
-      #header > span {
-        font-size: 30px;
-        padding-bottom: 10px;
-      }
-      #check {
-        margin-top: 5%;
-        margin-left: 3%;
-
-        width: 30%;
-      }
-      #check > span {
-        margin-left: 10px;
-      }
-      #check + p {
-        margin-top: 3%;
-        margin-left: 3%;
-      }
-      #check + p + input {
-        margin-left: 3%;
-        margin-top: 1%;
-        border-radius: 30px;
-        width: 30%;
-        height: 100px;
-        border: 1px solid grey;
-      }
-      #checkout_btn {
-        width: 100%;
-        height: 300px;
-        border: 1px solid grey;
-        margin-top: 3%;
-      }
-      #checkout_btn > p {
-        margin-top: 5%;
-        margin-left: 3%;
-      }
-      #checkout_btn > button {
-        margin-top: 3%;
-        padding: 19px 199px;
-        color: white;
-        border-radius: 10px;
-        margin-left: 3%;
-        background-color: blue;
-        margin-bottom: 3%;
-      }
-      #checkout_btn > h5 {
-        margin-left: 3%;
-        margin-top: 10px;
-        color: grey;
-      }
-    </style>
+    <title>cart-Headphone zone</title>
+    <link rel="stylesheet" href="./cart.css" />
   </head>
   <body>
     <div id="main">
@@ -112,7 +14,7 @@
           src="https://cdn-icons.flaticon.com/png/128/2567/premium/2567829.png?token=exp=1658304937~hmac=32caee5b26f9e72486c5234804641deb"
           alt=""
         />
-        <span id="totalquant">3 items</span>
+        <p id="totalquant"></p>
       </div>
 
       <!-- data from localStorage************ -->
@@ -128,102 +30,11 @@
       </div>
       <div id="checkout_btn">
         <p><u>Add order note</u></p>
-        <button>checkout</button>
-        <h5>Login to earn Club Audiophile points.</h5>
-        <h5>No account? Sign up now.</h5>
+        <button id="check_tab">checkout</button><br /><br />
+        <a href="">Login to earn Club Audiophile points.</a><br /><br />
+        <a href="">No account? Sign up now.</a>
       </div>
     </div>
   </body>
 </html>
-<script>
-  let data = [
-    {
-      image:
-        "https://cdn.shopify.com/s/files/1/0153/8863/products/jbl-tune-500bt-headphone-zone-4947698810943_400x.jpg?v=1579979286",
-      title: "JBL TUNE 500BT",
-      info: "wireless headphones",
-      price: 2999,
-      rating: "&star; &star; &star; &star; &star; ",
-    },
-    {
-      image:
-        "https://cdn.shopify.com/s/files/1/0153/8863/products/Headphone-Zone-JBL-Quantum-100-Black-01_400x.jpg?v=1620459914",
-      title: "JBL-QUANTUM 100",
-      info: "wireless gaming headset",
-      price: 1999,
-      retaing: "&star &star &star &star &star",
-    },
-  ];
-
-  for (a = 0; a < data.length; a++) {
-    data[a].quantity = 1;
-    data[a].original_price = data[a].price;
-  }
-
-  function myfun(arr) {
-    document.getElementById("cart").innerHTML = null;
-    document.getElementById("totalquant").innerText =
-      totalquant(arr) + " " + "items";
-    arr.forEach(function (el, index) {
-      let div = document.createElement("div");
-      let img = document.createElement("img");
-      img.src = el.image;
-      let childiv = document.createElement("div");
-      let title = document.createElement("h3");
-      title.innerText = el.title;
-      let price = document.createElement("span");
-      price.innerText = "₹" + " " + el.price;
-
-      let quant = document.createElement("div");
-      let plus = document.createElement("span");
-      plus.innerText = "+";
-      // plus.setAttribute("class", "val");
-      plus.addEventListener("click", function () {
-        add(index);
-      });
-
-      let value = document.createElement("span");
-      value.setAttribute("id", "quant");
-      value.innerText = el.quantity;
-
-      let minus = document.createElement("span");
-      minus.innerText = "-";
-      minus.addEventListener("click", function () {
-        subtract(index);
-      });
-      title.append(price);
-      quant.append(plus, value, minus);
-      childiv.append(title, quant);
-      div.append(img, childiv);
-      document.getElementById("cart").append(div);
-    });
-  }
-  myfun(data);
-
-  function add(index) {
-    console.log(index);
-    data[index].quantity++;
-    data[index].price = data[index].price + data[index].original_price;
-    myfun(data);
-    // window.location.reload();
-  }
-  function subtract(index) {
-    if (data[index].quantity === 1) {
-      data.splice(index, 1);
-      myfun(data);
-    } else {
-      console.log(index);
-      data[index].quantity--;
-      data[index].price = data[index].price - data[index].original_price;
-      myfun(data);
-      // window.location.reload();
-    }
-  }
-
-  function totalquant(arr) {
-    let x = arr.reduce(function (acc, el) {
-      return acc + el.quantity;
-    }, 0);
-    return x;
-  }
-</script>
+<script src="./cart.js"></script>

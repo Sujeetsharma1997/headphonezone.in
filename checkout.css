@@ -1,0 +1,92 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: Roboto, sans-serif;
+    font: Roboto, 100% (remote);
+    color: RGB(51, 51, 51);
+  }
+  #maindiv {
+    margin-left: 6%;
+    width: 50%;
+  }
+  #upper {
+    margin-left: 6%;
+  }
+  #upper > img {
+    height: 150px;
+  }
+  #upper > img + p {
+    font-size: 15px;
+  }
+  #upper > p + P {
+    font-size: 19px;
+    margin-top: 40px;
+  }
+  #upper > p + p + input {
+    width: 600px;
+    border-radius: 5px;
+    padding: 10px 10px;
+    margin-top: 19px;
+  }
+  #gst {
+    margin-left: 6%;
+    font-size: 19px;
+  }
+  #gst > P {
+    margin-top: 19px;
+    margin-bottom: 19px;
+    background-color: rgb(255, 234, 156);
+    padding: 10px;
+    border-radius: 6px;
+  }
+  #gst > span + input {
+    margin-left: 19px;
+    margin-right: 10px;
+  }
+  #gst > p + input {
+    margin-right: 10px;
+  }
+  form > h1 {
+    margin-bottom: 30px;
+  }
+  form {
+    margin-left: 6%;
+  }
+  form > input {
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .wide {
+    width: 600px;
+  }
+  .name {
+    width: 285px;
+  }
+  .address {
+    width: 179px;
+  }
+  form > button {
+    margin-top: 30px;
+    width: 300px;
+    padding: 17px;
+    background-color: blue;
+    margin-left: 50%;
+    color: white;
+    font-size: 19px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+  }
+  #bottam {
+    margin-left: 6%;
+    margin-top: 80px;
+  }
+  #bottam > p + p {
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  #bottam > p + p > span {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
