@@ -457,9 +457,9 @@ document.getElementById("sort").addEventListener("change",function(){
         div2.append(span1, span2, span3);
         div1.append(image, p1,p, div2);
         div1.addEventListener("click",function(){
-          
+          localStorage.clear()
           localStorage.setItem("cart",JSON.stringify(elm))
-          // window.location.href="../cart.html"
+        window.location.href="product_details.html"
         })
         document.querySelector("#container3").append(div1);
   

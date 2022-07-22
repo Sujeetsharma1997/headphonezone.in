@@ -14,20 +14,22 @@ function logoSlider(){
 }
 logoSlider()
 
+localStorage.clear()
 
 function setitem1(){
+    localStorage.clear()
     localStorage.setItem("category","earphone")
-    window.location.replace("./productData/product.html")
+   window.location.href="product.html";
 }
 function setitem2(){
+    localStorage.clear()
     localStorage.setItem("category","headphone")
-    window.location.herf="./productData/product.html"
-}
+    window.location.href="product.html";}
 function setitem3(){
+    localStorage.clear()
     localStorage.setItem("brand","1costom")
-    window.location.herf="./productData/product.html"
-}
+    window.location.href="product.html";}
 function setitem4(){
-    localStorage.setItem("brand","Bowers&Wikins")
-    window.location.herf="./productData/product.html"
-}
+    localStorage.clear()
+    localStorage.setItem("brand","Bowers&Wilkins")
+    window.location.href="product.html";}
