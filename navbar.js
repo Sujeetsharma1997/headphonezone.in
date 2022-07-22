@@ -33,3 +33,7 @@ function setitem4(){
     localStorage.clear()
     localStorage.setItem("brand","Bowers&Wilkins")
     window.location.href="product.html";}
+
+    document.getElementById("barnd_header").addEventListener("click",function(){
+        window.location.href="index.html"
+    })

@@ -140,10 +140,10 @@
         border: transparent;
         cursor: pointer;
       }
-      #image > img {
+      .image > img {
         width: 100%;
       }
-      #image {
+      .image {
         width: 100%;
         margin-top: 30px;
       }
