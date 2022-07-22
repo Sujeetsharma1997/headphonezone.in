@@ -13,3 +13,9 @@ function logoSlider(){
     },1000)
 }
 logoSlider()
+
+let pHov=document.getElementById("box_hover1")
+pHov.addEventListener("click", boxHover)
+function boxHover(){
+    console.log("hii")
+}
