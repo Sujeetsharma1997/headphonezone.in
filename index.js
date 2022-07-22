@@ -31,3 +31,7 @@ buttons[2].addEventListener("click", function () {
   }
   img.src = imgArr[imgNum];
 });
+
+function gotoProduct(){
+  window.location.href="product_page.html"
+}
