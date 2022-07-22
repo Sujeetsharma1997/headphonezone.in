@@ -14,8 +14,20 @@ function logoSlider(){
 }
 logoSlider()
 
-let pHov=document.getElementById("box_hover1")
-pHov.addEventListener("click", boxHover)
-function boxHover(){
-    console.log("hii")
+
+function setitem1(){
+    localStorage.setItem("category","earphone")
+    window.location.replace("./productData/product.html")
+}
+function setitem2(){
+    localStorage.setItem("category","headphone")
+    window.location.herf="./productData/product.html"
+}
+function setitem3(){
+    localStorage.setItem("brand","1costom")
+    window.location.herf="./productData/product.html"
+}
+function setitem4(){
+    localStorage.setItem("brand","Bowers&Wikins")
+    window.location.herf="./productData/product.html"
 }
