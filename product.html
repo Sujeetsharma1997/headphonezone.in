@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+  </head>
+  <link rel="stylesheet" href="./product.css" />
+  <body>
+    <div id="banner">
+      <img
+        src="https://cdn.shopify.com/s/files/1/0153/8863/collections/Meze_99_neo_1350x.jpg?v=1649765748"
+        alt=""
+      />
+      <div class="centered">
+        <h1>BEGINNER</h1>
+        <h1>AUDIOPHILE</h1>
+        <h1>HEADPHONES</h1>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="sidebar">
+        <h3>FILTERS</h3>
+        <hr />
+        <select name="" class="a" id="brand">
+          <option value="Brands">Brands</option>
+          <option value="1Custom">1Custom</option>
+          <option value="Bowers&Wilkins">Bowers&Wilkins</option>
+        </select>
+        <hr />
+        <select name="" class="a" id="category">
+          <option value="Brands">category</option>
+          <option value="headphone">headphones</option>
+          <option value="earphone">Earphones</option>
+        </select>
+        <hr />
+        <select name="" class="a" onchange="load()">
+          <option value="Brands">Availablity</option>
+          <option value="1Custom">In Stock</option>
+        </select>
+
+        <hr />
+        <select name="" class="a" id="sort">
+          <option value="Brands">Sort</option>
+          <option value="Lth">Low to high</option>
+          <option value="Htl">High to low</option>
+        </select>
+      </div>
+      <div class="d3">
+        <div class="trending">
+          <div id="container3">
+            <!-- code appended here -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="./products.js"></script>
+</html>
