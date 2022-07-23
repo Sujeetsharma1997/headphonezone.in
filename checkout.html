@@ -66,33 +66,11 @@
         </p>
       </div>
     </div>
-    <h1 onclick="addta()">click</h1>
+   
   </body>
 </html>
 <script>
-  function addta() {
-    let data = [
-      {
-        image:
-          "https://cdn.shopify.com/s/files/1/0153/8863/products/jbl-tune-500bt-headphone-zone-4947698810943_400x.jpg?v=1579979286",
-        title: "JBL TUNE 500BT",
-        info: "wireless headphones",
-        price: 2999,
-        rating: "&star; &star; &star; &star; &star; ",
-      },
-      {
-        image:
-          "https://cdn.shopify.com/s/files/1/0153/8863/products/Headphone-Zone-JBL-Quantum-100-Black-01_400x.jpg?v=1620459914",
-        title: "JBL-QUANTUM 100",
-        info: "wireless gaming headset",
-        price: 1999,
-        retaing: "&star &star &star &star &star",
-      },
-    ];
-
-    localStorage.setItem("cart_data", JSON.stringify(data));
-    window.location.href = "cart.html";
-  }
+  
   function paymentfun() {
     event.preventDefault();
     window.location.href = "payment.html";
