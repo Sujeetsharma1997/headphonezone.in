@@ -15,19 +15,29 @@ function logoSlider(){
 logoSlider()
 
 
+let u_name=localStorage.getItem("UserName")
+if(u_name==null){
+  
+}
+else{
+    let loginName=localStorage.getItem("UserName")
+    document.getElementById("loginData").innerHTML=`<i class="fa-brands fa-ello">${loginName}</i>`
+}
+// document.getElementById("loginData").innerText=
+
 function setitem1(){
     localStorage.setItem("category","earphone")
-    window.location.herf=""
+    window.location.replace("./productData/product.html")
 }
 function setitem2(){
     localStorage.setItem("category","headphone")
-    window.location.herf=""
+    window.location.herf="./productData/product.html"
 }
 function setitem3(){
     localStorage.setItem("brand","1costom")
-    window.location.herf=""
+    window.location.herf="./productData/product.html"
 }
 function setitem4(){
     localStorage.setItem("brand","Bowers&Wikins")
-    window.location.herf=""
+    window.location.herf="./productData/product.html"
 }

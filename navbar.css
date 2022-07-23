@@ -1,6 +1,23 @@
-body{
-    background-color: black;
+
+#navbar a{
+    text-decoration: none;
 }
+#loginData>a{
+    color: black;
+}
+#loginData+p>a{
+    color: black;
+}
+#loginData>i{
+    color: rgb(4, 80, 103);
+    width: 40px;
+    height: 15px;
+    overflow: hidden;
+}
+#barnd_header>h3>a{
+    color: rgb(36, 36, 219);
+}
+
 #navbar{
     display: flex;
     background-color: rgb(251, 249, 249);
