@@ -1,6 +1,6 @@
-/* body{
+body{
     background-color: black;
-} */
+}
 #navbar{
     display: flex;
     background-color: rgb(251, 249, 249);
@@ -52,8 +52,7 @@
 #navbar>div>img{
     left: 40px;
     height: 40px;
-    /* margin-right: 10px; */
-    /* position: fixed; */
+    position: fixed;
 }
 #middle_p>div>p{
     transition-property: border-bottom;
