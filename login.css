@@ -1,0 +1,95 @@
+
+#login>h1{
+    margin-top: 90px;
+    font-weight: bolder;
+    font-size: 32px;
+    text-align: center;
+}
+#login>h1+div{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 30%;
+}
+#login>h1+div>div{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    height: 35px;
+    /* padding-left: 10px; */
+    padding-right: 20px;
+    /* padding: 5px; */
+    margin-left: 20px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+#login>h1+div>div:nth-child(1){
+    background-color: rgb(78, 78, 163);
+}
+#login>h1+div>div:nth-child(2){
+    background-color: rgb(96, 96, 247);
+}
+#login>h1+div>div:nth-child(3){
+    background-color: rgb(47, 161, 232);
+}
+#login>h1+div>div>img{
+    width: 37px;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+
+#inst{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-weight: lighter;
+    color: rgb(101, 98, 98);
+}
+#form{
+    margin: auto;
+    width: 30%;
+}
+#form input{
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    border-radius: 25px;
+    border: 1px solid rgba(210, 202, 202, 0.749);
+    font-size: 18px;
+    padding-left: 30px;
+}
+#form+p{
+    text-align: center;
+    margin-top: 15px;
+    color: rgba(127, 122, 122, 0.657);
+    font-size: 14px;
+    margin-bottom: 100px;
+}
+#form+p>a{
+    margin-left: 15px;
+    font-size: 16px;
+}
+#submit{
+    background-color: rgb(83, 83, 244);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+#line{
+    margin: auto;
+    border-top: 1px solid rgba(150, 144, 144, 0.557);
+    margin-top: 50px;
+    width: 30%;
+}
+#line+h4{
+    width: 14%;
+    background-color: white;
+    padding: 20px;
+    position:relative;
+    left: 590px;
+    top: -27px;
+    color: rgb(92, 91, 91);
+}

@@ -1,0 +1,334 @@
+@import url("https://db.onlinewebfonts.com/c/2be9f95ec30c2c016b07414bc0ad268b?family=Zurich");
+      #umn {
+        display: flex;
+        width: 80%;
+        height: 20px;
+        align-items: center;
+        font-size: 12px;
+        font-family: Roboto, sans-serif;
+        color: #a4a4a4;
+       
+        margin: auto;
+      }
+      #container {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      #left {
+        width: 100%;
+      }
+      #right {
+        width: 100%;
+      }
+      #left > img {
+        width: 80%;
+      }
+      #slide {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 10px;
+        width: 80%;
+        height: 85px;
+      }
+      #slide > div {
+        border: 3px solid #444444;
+        border-radius: 8px;
+        width: 85px;
+        height: 82px;
+        margin: auto;
+        cursor: pointer;
+      }
+      #slide > div > img {
+        width: 80px;
+      }
+      #model {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 150px;
+        color: #444444;
+      }
+      #model > p {
+        font-family: Roboto, sans-serif;
+      }
+      #model > h1 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-family: Zurich Extended, sans-serif;
+        line-height: 35px;
+        font-weight: 800;
+        letter-spacing: 3px;
+        font-size: 42px;
+      }
+      #model > h3 {
+        font-family: Roboto, sans-serif;
+        letter-spacing: 1.4px;
+      }
+      #rating {
+        display: flex;
+        margin-top: 10px;
+      }
+      #rating > img {
+        width: 130px;
+        margin-left: -14px;
+      }
+      #rating > p {
+        color: #444444;
+        font-family: Roboto, sans-serif;
+      }
+      #pricetag {
+        font-family: Roboto, sans-serif;
+        margin-bottom: 25px;
+        margin-top: 20px;
+      }
+      #pricetag > span:nth-child(1) {
+        color: #3b0af8;
+        font-size: 30px;
+        font-weight: bolder;
+        letter-spacing: 1px;
+      }
+      #pricetag > a {
+        text-decoration: none solid rgb(68, 68, 68);
+        letter-spacing: 0.24px;
+        font-weight: 500;
+        font-size: 12px;
+        padding-left: 250px;
+        color: #a4a4a4;
+      }
+      #pricetag > span:nth-child(2) {
+        color: #a4a4a4;
+        letter-spacing: 2px;
+        font-size: 18px;
+        padding-left: 20px;
+        text-decoration: line-through solid rgb(68, 68, 68);
+      }
+      #text > p {
+        font-family: Roboto, sans-serif;
+        font-size: 16px;
+        color: #444444;
+        letter-spacing: 1px;
+        cursor: pointer;
+        line-height: 15px;
+      }
+      #text > p:last-child {
+        color: #444444;
+        font-size: 18px;
+        padding-top: 20px;
+      }
+      #icon {
+        border: 3px solid #444444;
+        border-radius: 8px;
+        width: 90px;
+        height: 90px;
+        cursor: pointer;
+      }
+      #icon > img {
+        width: 90px;
+      }
+      button {
+        color: white;
+        background-color: #3c07ff;
+        margin-top: 40px;
+        letter-spacing: 2px;
+        font-weight: 600;
+        font-size: 15px;
+        font-family: Roboto, sans-serif;
+        padding: 18px 205px;
+        border-radius: 100px;
+        border: transparent;
+        cursor: pointer;
+      }
+      .image > img {
+        width: 100%;
+      }
+      .image {
+        width: 100%;
+        margin-top: 30px;
+      }
+
+
+
+
+
+.one{
+    width: 80%;
+   margin: auto;
+   /* border: 1px solid red; */
+   margin-top: 30px;
+  
+
+}
+.one img{
+    width: 100%;
+}
+
+.two{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 20px;
+    /* border: 1px solid greenyellow; */
+
+}
+.RAGHAV{
+    /* border: 1px solid black; */
+    width: 80%;
+    margin: auto;
+    margin-top: -90px;
+    font-weight: bold;
+}
+#RAGHAV+p{
+    /* margin-left: 140px;
+    margin-top: -20px; */
+    font-weight: lighter;
+}
+.PAIRS{
+    /* border: 2px solid skyblue; */
+    width: 80%;
+    margin: auto;
+    font-weight: lighter; 
+    margin-top: 70px;
+}
+.three{
+    width: 80%;
+    display: flex;
+    margin: auto;
+    
+}
+.threediv{
+    /* border: 3PX solid black; */
+    width: 50%;
+    display: flex;
+    background-color: #f7f7f7;
+}
+.threediv img{
+    width: 60%;
+    margin: auto;
+    padding: 0%;
+    margin-inline: 10px;
+    margin-top: 15px;
+}
+.four{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    /* margin-left: 50px; */
+    column-gap: 35px;
+    margin-top: 30px;
+    grid-template-columns: repeat(100,5fr);
+    /* text-align: center; */
+    /* border: 1px solid purple */
+}
+.dscf{
+    background-color: blue;
+    color: white;
+  border-radius: 30px;
+  /* border: solid 1px black; */
+  width: 200px;
+  /* height: 40px; */
+  text-align: center;
+  padding: 0%;
+line-height: 200%;
+  /* margin-top: 25px; */
+}
+.five{
+   width: 80%;
+   margin: auto;
+   padding: 0%;
+   display: flex;
+    /* border: 1px solid red; */
+    /* text-align: center; */
+    margin-top: 30px;
+    /* border: 1px solid black; */
+}
+.five>h1{
+    margin-left: 40px;
+    font-weight: lighter;
+    
+}
+.five p{
+   margin-left: 30px;
+   font-weight: lighter;
+   font-size: 20px;
+  
+}
+.six{
+    /* border: 2px solid pink; */
+    width: 80%;
+    margin: auto;
+    padding: 0%;
+    margin-top: 80px;
+}
+.six img{
+    /* border: 1px solid red; */
+    width: 100%;
+    align-items: center;
+    /* margin-left: 180px; */
+   
+    /* border: 1px solid orangered; */
+   
+}
+.seven{
+    
+    display: flex;
+     /* border: 1px solid red; */
+     text-align: center;
+     margin-top: 50px;
+}
+.seven h1{
+    margin-left: 30px;
+    font-weight: lighter;
+    
+   
+ }
+.seven p{
+    margin-left: 30px;
+    font-weight: lighter;
+    font-size: 20px;
+    width: 90%;
+   
+ }
+ .eight{
+    width: 80%;
+    margin: auto;
+    padding: 0%;
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+   
+ }
+ .nine{
+    /* border: 3px solid skyblue; */
+    width: 80%;
+    padding: 0%;
+    margin: auto;
+    margin-top: 70px;
+    display: grid;
+    display: flex;
+    justify-content: space-around;
+ }
+ .nine img{
+    width: 95%;
+    justify-content: space-around;
+    margin-top: 20px;
+ }
+ .ten{
+    /* border: 2px solid black; */
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+ }
+ .eleven{
+    /* border: 2px solid red; */
+    width: 80%;
+    margin: auto;
+    margin-top: 70px;
+ }
+ .eleven img{
+    width: 100%;
+ }
+ 
