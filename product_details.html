@@ -253,9 +253,9 @@
       </div>
       <div>
         <p>Search</p>
-        <p>Login</p>
+        <p onclick="login()">Login</p>
         <p>Cart</p>
-        <h4>0</h4>
+        <h4 id="q">0</h4>
       </div>
     </div>
 
@@ -314,7 +314,7 @@
         </div>
         <button>ADD TO CART</button>
         <div class="image">
-          <img src="/image/pro.PNG" alt="" />
+          <!-- <img src="/image/pro.PNG" alt="" /> -->
         </div>
       </div>
     </div>
@@ -751,6 +751,40 @@
     </div>
   </body>
 </html>
+<script>
+  document.querySelector("button").addEventListener("click", function () {
+    console.log("A");
+  });
+</script>
 
-<script src="addtocart.js"></script>
+<!-- <script src="addtocart.js"></script> -->
+<!-- <script>
+  let p = JSON.parse(localStorage.getItem("cart"));
+  function displayProduct(data) {
+    data.map(function (elem, index) {
+      document.querySelector("#smlmdl").innerHTML = p.name;
+
+      document.querySelector(".b").innerHTML = p.brand;
+      document.querySelector(".n").innerHTML = p.name;
+      document.querySelector(".c").innerHTML = p.category;
+      document.querySelector(".a").src = p.image;
+      document.querySelector(".pr").innerHTML = "₹" + p.price;
+      document.querySelector(".stpr").innerHTML = "₹ MRP" + elem.MRP;
+      document.querySelector(".d").src = elem.short_url1;
+      document.querySelector(".e").src = elem.short_url3;
+      document.querySelector(".f").src = elem.short_url2;
+      document.querySelector(".g").src = elem.short_url1;
+      document.querySelector(".h").src = elem.short_url3;
+      document.querySelector(".smlico").src = elem.image_url;
+    });
+  }
+  document.querySelector("button").addEventListener("click", cartPage);
+  function cartPage() {
+    let arr = [];
+    arr.push(p);
+    localStorage.setItem("cart_data", JSON.stringify(arr));
+    window.location.href = "product_details.html";
+  }
+</script> -->
+<script src="./addtocart.js"></script>
 <script src="./navbar.js"></script>

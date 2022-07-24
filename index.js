@@ -33,5 +33,5 @@ buttons[2].addEventListener("click", function () {
 });
 
 function gotoProduct(){
-  window.location.href="product_page.html"
+  window.location.href="product.html"
 }

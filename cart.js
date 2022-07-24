@@ -57,6 +57,8 @@ function myfun(arr) {
       let value = document.createElement("span");
       value.setAttribute("id", "quant");
       value.innerText = el.quantity;
+     localStorage.setItem("quant",el.quantity);
+     document.getElementById("q").innerText=el.quantity
 
       let minus = document.createElement("span");
       minus.innerText = "-";
