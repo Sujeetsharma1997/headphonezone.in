@@ -29,6 +29,7 @@
 
 # 1.Home Page
 <img src="https://github.com/iammostak/headphonezone.in/raw/main/readme_images/Screenshot%20(97).png?raw=true" />
+
 # 2.Navbar
 <img src="https://github.com/iammostak/headphonezone.in/raw/main/readme_images/Screenshot%20(98).png?raw=true" />
 
